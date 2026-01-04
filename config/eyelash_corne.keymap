@@ -66,10 +66,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E      &kp R             &kp T                                &kp UP                &kp Y          &kp U      &kp I            &kp O    &kp P     &kp MINUS
-&mt LCTRL TAB   &kp A  &kp S  &kp D      &kp F             &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V             &kp B        &kp K_MUTE              &kp DOWN              &kp N          &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp EQUAL
-                              &lt 3 TAB  &mt LEFT_WIN TAB  &lt 2 SPACE                                                &kp BACKSPACE  &kp ENTER  &lt 1 BACKSLASH
+&kp ESC         &kp Q  &kp W  &kp E      &kp R             &kp T                                      &mmv MOVE_UP                     &kp Y          &kp U      &kp I            &kp O    &kp P     &kp MINUS
+&mt LCTRL TAB   &kp A  &kp S  &kp D      &kp F             &kp G                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H          &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V             &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N          &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp EQUAL
+                              &lt 3 TAB  &mt LEFT_WIN TAB  &lt 2 SPACE                                                                 &kp BACKSPACE  &kp ENTER  &lt 1 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -91,8 +91,8 @@
             display-name = "SYMBOL";
             bindings = <
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans     &trans        &kp LBKT      &kp LBRC      &kp LPAR      &trans                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-&trans     &trans        &trans        &trans        &trans        &trans        &trans                    &mmv MOVE_DOWN                   &trans        &trans        &kp LBKT      &kp RBKT      &trans        &trans
+&trans     &kp SQT       &kp LBKT      &kp LBRC      &kp LPAR      &kp MINUS               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSLH      &trans
+&trans     &kp TILDE     &trans        &trans        &trans        &kp UNDER     &trans                    &mmv MOVE_DOWN                   &trans        &trans        &kp LBKT      &kp RBKT      &kp PIPE      &trans
                                        &trans        &trans        &trans                                                                   &kp DEL       &trans        &trans
             >;
 
