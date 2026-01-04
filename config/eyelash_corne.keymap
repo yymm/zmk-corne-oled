@@ -90,10 +90,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans     &kp SQT       &kp LBKT      &kp LBRC      &kp LPAR      &kp MINUS               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSLH      &trans
-&trans     &kp TILDE     &trans        &trans        &trans        &kp UNDER     &trans                    &mmv MOVE_DOWN                   &trans        &trans        &kp LBKT      &kp RBKT      &kp PIPE      &trans
-                                       &trans        &trans        &trans                                                                   &kp DEL       &trans        &trans
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans     &kp SQT       &kp LBKT      &kp LBRC      &kp LPAR      &kp MINUS               &kp LEFT  &mkp LCLK  &kp RIGHT  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp BSLH      &trans
+&trans     &kp TILDE     &trans        &trans        &trans        &kp UNDER     &trans              &kp DOWN              &kp PLUS      &trans        &kp LBKT      &kp RBKT      &kp PIPE      &trans
+                                       &trans        &trans        &trans                                                  &kp DEL       &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -102,10 +102,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                &mmv MOVE_UP                     &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans   &trans   &trans   &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                        &trans  &trans  &kp F6                                                                 &kp F7  &trans  &trans
+&trans  &trans  &trans    &kp PAGE_UP    &trans   &trans                                &mmv MOVE_UP                     &trans  &trans    &kp UP    &trans     &trans   &trans
+&trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp END  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&trans  &kp F1  &kp F2    &kp F3         &kp F4   &kp F5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F8  &kp F9    &kp F10   &kp F11    &kp F12  &trans
+                          &trans         &trans   &kp F6                                                                 &kp F7  &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
